@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Plus Jakarta Sans;
+    scroll-behavior: smooth;
+  }
+  .containerSet {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+  }
+}

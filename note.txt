@@ -1,0 +1,76 @@
+warna
+#000000
+#181E4B
+#5E6282
+#9A9EA6
+#9C9C9C
+#DEDEDE
+#4475F2
+#789DFC
+#D9E3FC
+#4737FF
+#BCB6FD
+#E1DFF6
+#4F7DF3
+#A6BBF2
+#CFD9F5
+
+Typografy
+
+
+Logo
+18px - jakarta font                 
+
+
+
+
+    <header class="bg-transparent fixed w-full left-0 top-0 z-100" id="header">
+        <nav class="ml-6 mr-6 h-14 w-full flex justify-between items-center">
+            <a href="#" class="flex gap-x-2 text-lg font-bold font-Plus Jakarta Sans">
+                <img src="../public/images/Logo Rounded.png" alt="image">Lidia</a>
+            <div class="fixed top-0 right-0 w-4/5 h-screen bg-colorBg shadow-md pt-24 pl-12 pb-0 z-100 hidden"
+                id="navbar-menu">
+                <ul class="flex flex-col gap-y-12">
+                    <li>
+                        <a href="#" class="text-sm font-normal text-color5">Features</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm font-normal text-color5">Service</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm font-normal text-color5">Review</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm font-normal text-color5">Location</a>
+                    </li>
+                </ul>
+                <!-- close icon  -->
+                <div class="absolute top-6 right-4 text-lg cursor-pointer" id="btn-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="text-lg cursor-pointer flex justify-center items-center gap-x-3">
+                <!-- login  -->
+                <a href="#login" class="px-4 py-2 font-bold text-sm text-colorBg rounded-lg bg-color2">Login</a>
+                <!-- menu icon  -->
+                <i class="ri-menu-line lg:hidden" id="btn-menu"></i>
+            </div>
+        </nav>
+        <!-- for large devices  -->
+        <div class="lg:block hidden ml-auto mr-auto ">
+            <ul class="flex flex-row justify-between items-center">
+                <li>
+                    <a href="#" class="text-sm font-normal text-color5">Features</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm font-normal text-color5">Service</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm font-normal text-color5">Review</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm font-normal text-color5">Location</a>
+                </li>
+            </ul>
+        </div>
+    </header>

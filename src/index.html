@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lidia - DIgital Library</title>
+    <link rel="shortcut icon" href="../public/images/Logo Square.png" type="image/png">
+    <link rel="stylesheet" href="../dist/output.css" />
+    <!-- =====font family=====  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <!-- =====remix icon cdn=====  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body style="height: 1000px;">
+    <!-- ========== Navbar & Header ==========  -->
+    <header class="w-full top-0 left-0 z-100 fixed bg-transparent">
+        <nav class="ms-6 me-6 h-14 flex justify-between items-center">
+            <!-- for large devices  -->
+            <a href="#" class="flex place-items-center gap-x-2 text-lg font-bold">
+                <img src="../public/images/Logo Rounded.png" alt="image">Lidia
+            </a>
+            <div class="absolute -right-full top-0 w-4/5 px-12 py-12 bg-colorBg shadow-lg duration-300 show-menu"
+                id="navbar-menu">
+                <ul class="flex flex-col gap-12 items-center">
+                    <li><a href="#feature"
+                            class="text-sm font-normal text-color5 hover:text-color8 duration-300">Feature</a></li>
+                    <li><a href="#feature"
+                            class="text-sm font-normal text-color5 hover:text-color8 duration-300">Service</a></li>
+                    <li><a href="#review"
+                            class="text-sm font-normal text-color5 hover:text-color8 duration-300">Review</a></li>
+                    <li><a href="#location"
+                            class="text-sm font-normal text-color5 hover:text-color8 duration-300">Location</a></li>
+                </ul>
+                <div class="absolute top-6 right-4 text-lg cursor-pointer" id="btn-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="flex flex-row gap-2 items-center cursor-pointer" id="btn-extra">
+                <a href="#login" class="px-4 py-2 font-bold text-sm text-color1 rounded-lg bg-color7"
+                    id="login">Login</a>
+                <i class="ri-menu-line text-lg lg:hidden" id="btn-menu"></i>
+            </div>
+        </nav>
+        <!-- <div class="absolute w-96 h-96 top-0 right-0 bg-color13 -z-10" id="blob-1"></div>
+        <div id="blob-2"></div> -->
+    </header>
+    <!-- js link  -->
+    <script src="../src/js/main.js"></script>
+</body>
+
+</html>
