@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lidia - Login Page</title>
+    <link rel="shortcut icon" href="../public/images/Logo Square.png" type="image/png">
+    <link rel="stylesheet" href="../dist/output.css" />
+    <!-- =====font family=====  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <!-- =====remix icon cdn=====  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section id="login">
+        <div class="relative top-0 left-0 w-full h-full pt-16 pb-0 px-6">
+            <div class="block w-full h-auto mb-6">
+                <img src="../public/images/Logo Rounded.png" class="w-[50px] mx-auto" alt="logo">
+            </div>
+            <form action="#"
+                class="grid gap-y-5 bg-colorBg shadow-sm shadow-gray-600 pt-8 px-6 pb-10 rounded-md text-start border-t-2 border-color10 md:max-w-[400px] md:mx-auto xl:max-w-[350px]">
+                <p class="font-extralight text-base text-color10">Home <span class="text-color5"> / Login</span></p>
+                <h2 class="font-semibold text-lg">Login</h2>
+                <p class="font-normal text-[0.9rem] text-color5">Input your username and password.</p>
+                <div class="grid gap-y-4">
+                    <div>
+                        <label for="email" class="block text-start font-semibold mb-1">Username</label>
+                        <input
+                            class="w-full p-2 bg-colorbg border border-color5 rounded-md outline-2 text-color3 text-sm"
+                            type="text" name="username" id="username" placeholder="Username" required>
+                    </div>
+                    <div>
+                        <label for="Password" class="block text-start font-semibold mb-1">Password</label>
+                        <input class="w-full p-2 bg-colorbg border border-color5 rounded-md text-color3 text-sm"
+                            type="password" name="password" id="password" placeholder="Password" required>
+                    </div>
+                    <div
+                        class="inline-block bg-color7 p-2 w-full text-colorBg rounded-md font-normal cursor-pointer text-center hover:bg-color10 duration-300">
+                        <button type="submit">Login</button>
+                    </div>
+                </div>
+            </form>
+            <div class="mt-10 mb-10 text-center">
+                <p class="font-normal text-[0.9rem] text-color5">Don't have an account ?
+                    <a href="../src/register.html" class="text-color7 hover:text-color10 underline duration-300">Create
+                        one!</a>
+                </p>
+                <p class="font-normal text-[0.9rem] mt-4 text-color5">
+                    <a href="../src/index.html" class="text-color7 hover:text-color10 duration-300">Go back
+                    </a>
+                </p>
+            </div>
+            <div>
+                <p class="font-normal text-[0.9rem] text-color5 text-center">
+                    &copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script> Lidia. All Right Reserved.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

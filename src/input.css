@@ -7,8 +7,17 @@
     font-family: Plus Jakarta Sans;
     scroll-behavior: smooth;
   }
-  .containerSet {
-    max-width: 1120px;
-    margin-inline: 1.5rem;
-  }
+}
+.show-menu {
+  @apply right-[0];
+}
+.sticky-header::after {
+  @apply content-[""] absolute w-[1000%] h-[100%] top-0 left-0 -z-[1] transition bg-colorBg duration-[400] p-[10px];
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+.sticky-header #login {
+  @apply bg-color7 text-colorBg;
+}
+.active-link {
+  @apply text-color7;
 }

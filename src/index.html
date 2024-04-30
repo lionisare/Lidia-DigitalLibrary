@@ -16,41 +16,270 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
-<body style="height: 1000px;">
+<body>
     <!-- ========== Navbar & Header ==========  -->
-    <header class="w-full top-0 left-0 z-100 fixed bg-transparent">
-        <nav class="ms-6 me-6 h-14 flex justify-between items-center">
+    <header class="w-full py-2 px-5 top-0 left-0 z-[100] fixed bg-transparent lg:py-4 lg:px-28" id="header">
+        <nav class="container mx-auto h-14 flex justify-between items-center">
             <!-- for large devices  -->
             <a href="#" class="flex place-items-center gap-x-2 text-lg font-bold">
                 <img src="../public/images/Logo Rounded.png" alt="image">Lidia
             </a>
-            <div class="absolute -right-full top-0 w-4/5 px-12 py-12 bg-colorBg shadow-lg duration-300 show-menu"
+            <div class="navbar__menu fixed -right-full top-0 w-4/5 h-[50%] px-12 py-20 z-[100] bg-colorBg shadow-lg  duration-300 md:w-2/5 lg:static lg:shadow-none lg:bg-transparent lg:flex lg:items-center lg:mr-96"
                 id="navbar-menu">
-                <ul class="flex flex-col gap-12 items-center">
+                <ul class="flex flex-col gap-12 items-center lg:flex-row lg:gap-12 lg:items-center">
                     <li><a href="#feature"
-                            class="text-sm font-normal text-color5 hover:text-color8 duration-300">Feature</a></li>
-                    <li><a href="#feature"
-                            class="text-sm font-normal text-color5 hover:text-color8 duration-300">Service</a></li>
+                            class="text-sm font-normal text-color4 hover:text-color10 duration-300">Feature</a>
+                    </li>
+                    <li><a href="#services"
+                            class="text-sm font-normal text-color4 hover:text-color10 duration-300">Service</a></li>
                     <li><a href="#review"
-                            class="text-sm font-normal text-color5 hover:text-color8 duration-300">Review</a></li>
+                            class="text-sm font-normal text-color4 hover:text-color10 duration-300">Review</a></li>
                     <li><a href="#location"
-                            class="text-sm font-normal text-color5 hover:text-color8 duration-300">Location</a></li>
+                            class="text-sm font-normal text-color4 hover:text-color10 duration-300">Location</a></li>
                 </ul>
                 <div class="absolute top-6 right-4 text-lg cursor-pointer" id="btn-close">
-                    <i class="ri-close-line"></i>
+                    <i class="ri-close-line lg:hidden"></i>
                 </div>
             </div>
             <div class="flex flex-row gap-2 items-center cursor-pointer" id="btn-extra">
-                <a href="#login" class="px-4 py-2 font-bold text-sm text-color1 rounded-lg bg-color7"
+                <a href="../src/login.html"
+                    class="px-4 py-2 font-bold text-sm text-color2 rounded-lg bg-colorBg hover:text-color10 duration-300"
                     id="login">Login</a>
                 <i class="ri-menu-line text-lg lg:hidden" id="btn-menu"></i>
             </div>
         </nav>
-        <!-- <div class="absolute w-96 h-96 top-0 right-0 bg-color13 -z-10" id="blob-1"></div>
-        <div id="blob-2"></div> -->
     </header>
+    <div class="relatif">
+        <img src="../public/images/Cover.png"
+            class="absolute top-0 right-0 w-[210px] h-[350px] -z-[1] md:w-[450px] md:h-[450px] lg:w-[570px] lg:h-[670px]"
+            alt="blob">
+    </div>
+    <main class="overflow-hidden">
+        <!-- ========== Home Section ==========  -->
+        <section id="home">
+            <div class="container py-20 px-5 lg:py-40 lg:px-28">
+                <div class="grid grid-cols-12 gap-y-6">
+                    <div class="col-span-12 relative lg:col-span-4 lg:order-2">
+                        <div
+                            class="flex justify-center items-center w-full lg:w-[600px] lg:flex lg:justify-start lg:pr-[50px]">
+                            <img src="../public/images/Left.png"
+                                class="block w-[370px] h-auto justify-center mb-4 md:w-[370px] lg:w-[420px] object-center object-cover lg:max-w[260px]"
+                                alt="image">
+                        </div>
+                    </div>
+                    <div class="col-span-12 md:text-center lg:col-span-8 lg:order-1 lg:text-start">
+                        <h1 class="text-color2 font-extrabold text-4xl mb-4 md:text-5xl lg:text-[76px]">Search & review
+                            <br>
+                            your
+                            <span class="text-color7 underline">fav
+                                book</span><br>effortlessly
+                        </h1>
+                        <p
+                            class="text-color4 font-normal text-[0.938rem] w-full mb-4 md:w-4/5 md:mx-auto lg:text-start lg:w-full lg:max-w[450px]">
+                            Embark on a literary journey like never before with our revolutionary <br>
+                            library application! Introducing a seamless experience <br>
+                            that transcends traditional boundaries, where you <br>
+                            can effortlessly search your favorite books.✨</p>
+                        <div>
+                            <a href="#"
+                                class="inline-flex gap-x-2 justify-center items-center py-3 px-6 bg-color7 text-colorBg text-base font-bold rounded-lg hover:bg-color10 duration-300">Star
+                                now<i class="ri-arrow-right-line grid place-items-center"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== Feature Section ==========  -->
+        <section id="feature">
+            <div class="container px-5 py-[5.5rem] lg:px-28">
+                <h3 class="uppercase text-color7 lg:text-lg font-extrabold">Features</h3>
+                <h2 class="mb-4 text-color1 font-bold text-[1.5rem] lg:text-[48px]"><span>🤔</span>•What You Can Do?
+                </h2>
+                <div
+                    class="flex flex-wrap gap-y-8 justify-center items-center text-center pt-14 md:flex-nowrap md:gap-x-8 lg:gap-x-12">
+                    <div>
+                        <i
+                            class="ri-search-line w-14 h-14 bg-color7 text-[32px] text-colorBg px-5 py-3 rounded-[1rem]"></i>
+                        <h3 class="font-bold text-base mt-5 mb-2 lg:text-[18px]">Search book</h3>
+                        <p class="font-medium text-[0.938rem] max-w-[230px] text-color4 md:max-w-[270px] lg:text-base">
+                            Effortlessly find your next <br>
+                            read with our powerful and intuitive <br>
+                            book search.
+                        </p>
+                    </div>
+                    <div>
+                        <i
+                            class="ri-chat-3-line w-14 h-14 bg-color7 text-[32px] text-colorBg px-5 py-3 rounded-[1rem]"></i>
+                        <h3 class="font-bold text-base mt-5 mb-2 lg:text-[18px]">Review book</h3>
+                        <p class="font-medium text-[0.938rem] max-w-[230px] text-color4 md:max-w-[270px] lg:text-base">
+                            Discover insightful critiques and <br>
+                            share your thoughts on diverse <br>
+                            literary masterpieces effortlessly
+                        </p>
+                    </div>
+                    <div>
+                        <i
+                            class="ri-heart-line w-14 h-14 bg-color7 text-[32px] text-colorBg px-5 py-3 rounded-[1rem]"></i>
+                        <h3 class="font-bold text-base mt-5 mb-2 lg:text-[18px]">Wishlist book</h3>
+                        <p class="font-medium text-[0.938rem] max-w-[230px] text-color4 md:max-w-[270px] lg:text-base">
+                            Curate your literary <br>
+                            dreams–wishlist books for future <br>
+                            adventures and discoveries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== Service Section ==========  -->
+        <section id="services">
+            <div class="container px-5 pt-20 lg:px-28 lg:pt-[5.5rem]">
+                <h3 class="uppercase text-color7 text-lg font-extrabold">Services</h3>
+                <h2 class="mb-4 text-color1 font-bold text-[1.5rem] lg:text-[48px]"><span>🚀•</span>The Services For You
+                </h2>
+                <div class="flex flex-wrap gap-y-8">
+                    <div class="md:flex md:p-0">
+                        <img src="../public/images/Service.png"
+                            class="block max-w-full h-auto md:w-[370px] lg:w-[570px] justify-center pt-2" alt="image">
+                        <div class="md:py-6 px-10">
+                            <h3 class="text-[1.225rem] text-color1 font-semibold mb-5 text-center md:text-start"><span
+                                    class="text-color7">Rent</span>
+                                your
+                                favorite book <br>fairly easy on
+                                <span class="text-color7">Lidia</span>!
+                            </h3>
+                            <p class="text-[0.938rem] text-color1 font-normal text-justify mb-2 lg:text-base">Viewing,
+                                rent, and
+                                organize your favorite books has never been easier. An integrated digital library rent
+                                that’s simple to use, Lidia lets you spend less time managing your work and more time
+                                actually doing it!</p>
+                            <p class="text-[0.938rem] text-color1 font-normal text-justify lg:text-base"> Effortless
+                                rentals, personalized
+                                shelves—Lidia transforms book management, enhancing your reading experience~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:flex">
+                        <div class="md:py-6 px-10">
+                            <h3 class="text-[1.225rem] text-color1 font-semibold mb-5 text-center md:text-start">Quick
+                                Book Rentals:
+                                <br>
+                                <span class="text-color7">Dive</span> into <span class="text-color7">Reading</span>
+                                Instantly
+                            </h3>
+                            <p class="text-[0.938rem] text-color1 font-normal text-justify mb-2">Discover instant
+                                literary delight. Access a vast library, borrow your favorite reads, and dive into
+                                captivating stories within minutes. Reading made quick and easy, just a click away!</p>
+                            <p class="text-[0.938rem] text-color1 font-normal text-justify lg:text-base">Unlock a world
+                                of stories
+                                effortlessly.
+                                Browse genres, choose, rent in minutes.
+                                Seamlessly manage your reading adventures
+                                with our intuitive platform~
+                            </p>
+                        </div>
+                        <img src="../public/images/Reading.png"
+                            class="block max-w-full h-auto md:w-[370px] lg:w-[570px]" alt="image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== Review Section ==========  -->
+        <section id="review">
+            <div class="container px-5 pt-20 lg:px-28 lg:pt-[5.5rem]">
+                <h3 class="uppercase text-color7 text-lg font-extrabold">Review</h3>
+                <h2 class="mb-4 text-color1 font-bold text-[1.5rem] lg:text-[48px]"><span>💬•</span> Reviews of Others
+                </h2>
+                <div
+                    class="flex flex-wrap gap-y-8 pt-4 justify-center text-center md:flex-nowrap md:gap-x-5 md:justify-center lg:gap-x-12">
+                    <article class="shadow-md shadow-gray-600 py-8 px-9 md:w-[250px] md:px-4 md:py-2 lg:w-full">
+                        <img src="../public/images/p2.jpg" alt="image"
+                            class="w-[150px] h-[150px] object-cover object-center rounded-full mx-auto mb-4">
+                        <p class="text-base font-medium text-color3 mb-4 md:max-w-[270px] lg:mx-auto">Engaging plot,
+                            vivid characters; <br>
+                            a captivating read that <br>
+                            lingers in your thoughts.</p>
+                        <h3 class="text-base font-medium text-color16 mb-4">Marie Jane</h3>
+                        <span class="text-base font-medium">College Student</span>
+                    </article>
+                    <article
+                        class="shadow-md shadow-gray-600 py-8 px-9 md:w-[250px] md:px-4 md:py-2 lg:w-full lg:mx-auto">
+                        <img src="../public/images/p3.jpg" alt="image"
+                            class="w-[150px] h-[150px] object-cover object-center rounded-full mx-auto mb-4">
+                        <p class="text-base font-medium text-color3 mb-4 md:max-w-[270px] lg:mx-auto">Thought-provoking
+                            narrative <br>
+                            and rich prose. A must-read for <br>
+                            any avid book lover!
+                        </p>
+                        <h3 class="text-base font-medium text-color16 mb-4">Marie Jane</h3>
+                        <span class="text-base font-medium">School Studen</span>
+                    </article>
+                    <article class="shadow-md shadow-gray-600 py-8 px-9 md:w-[250px] md:px-4 md:py-2 lg:w-full">
+                        <img src="../public/images/p4.jpg" alt="image"
+                            class="w-[150px] h-[150px] object-cover object-center rounded-full mx-auto mb-4">
+                        <p class="text-base font-medium text-color3 mb-4 md:max-w-[270px] lg:mx-auto">Immersive
+                            storytelling! <br>
+                            An enriching literary experience <br>
+                            worth savoring and sharing.
+                        </p>
+                        <h3 class="text-base font-medium text-color16 mb-4">Marie Jane</h3>
+                        <span class="text-base font-medium">ERP Develope</span>
+                    </article>
+                </div>
+        </section>
+        <!-- ========== Location Section ==========  -->
+        <section id="location">
+            <div class="container px-5 pt-20 lg:px-28 lg:pt-[5.5rem]">
+                <h3 class="uppercase text-color7 text-lg font-extrabold">Location</h3>
+                <h2 class="mb-4 text-color1 font-bold text-[1.5rem] lg:text-[48px]"><span>🗺•</span> Our Library
+                    Location
+                </h2>
+                <div class="flex pt-4 mx-auto justify-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126829.33545461309!2d106.70948917782083!3d-6.59501620278224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5b7ad0f824b%3A0x4c71fd1b0b8ae76d!2sKota%20Bogor%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1713795047215!5m2!1sid!2sid"
+                        class="h-[270px] w-full"></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- ========== Footer Section ==========  -->
+        <footer class="container px-5 pt-8 lg:px-28 lg:pt-24">
+            <div class="flex flex-col items-center py-6 gap-y-4 md:flex-row md:gap-x-12 md:justify-center lg:mx-auto">
+                <div>
+                    <h3 class="text-base font-semibold mb-4">Managed By</h3>
+                    <span class="flex gap-x-2 justify-center items-center">
+                        <img src="../public/images/Logo Rounded.png" class="w-[40px]" alt="image">
+                        <b class="-tracking-tighter">Lidia</b>
+                    </span>
+                </div>
+                <div>
+                    <h3 class="text-base font-semibold mb-6">Social Media</h3>
+                    <div class="flex gap-x-2 justify-center items-center">
+                        <a href="https://www.twitter.com
+                        "><i class="ri-twitter-line text-2xl font-bold"></i></a>
+                        <a href="https://www.instagram.com
+                        "> <i class="ri-instagram-line text-2xl font-bold"></i></a>
+                        <a href="https://www.facebook.com
+                        "><i class="ri-facebook-line text-2xl font-bold"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-base font-semibold mb-7 text-center">Slogan</h3>
+                    <span>#RentFavBooks</span>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- ==========copyright==========  -->
+    <div class="pt-5 w-full bg-color7 text-center py-[15px] px-[80px] text-sm text-colorBg font-semibold">
+        <p>
+            &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script> Lidia. All Right Reserved.
+        </p>
+    </div>
     <!-- js link  -->
-    <script src="../src/js/main.js"></script>
+    <script src=" ../src/js/main.js"></script>
 </body>
 
 </html>

@@ -23,6 +23,7 @@ module.exports = {
         color13: "#4F7DF3",
         color14: "#A6BBF2",
         color15: "#CFD9F5",
+        color16: "#23A6F0",
       },
     },
   },
